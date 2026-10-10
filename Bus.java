@@ -19,7 +19,27 @@ public class Bus
         return ausziehbar;
     }
     
+    public void setLinie(String neuLinie)
+    {
+        linie = neuLinie;
+    }
     
+    public void setHoehe(int neuHoehe)
+    {
+        hoehe = neuHoehe;
+    }
+    
+        public void setAusziehbar(boolean neuAusziehbar)
+    {
+        ausziehbar = neuAusziehbar;
+    }
+    
+    public Bus()
+    {
+        setLinie("UNKN");
+        setHoehe(0);
+        setAusziehbar(false);
+    }
     
     
 }
