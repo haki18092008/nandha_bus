@@ -41,6 +41,10 @@ public class Bus
         setNiederflur(false);
     }
     
-    
-    
+    public Bus(String neuLinie, int neuSitzplaetze, boolean neuNiederflur)
+    {
+        setLinie(neuLinie);
+        setSitzplaetze(neuSitzplaetze);
+        setNiederflur(neuNiederflur);
+    }
 }
