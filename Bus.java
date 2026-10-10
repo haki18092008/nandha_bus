@@ -1,22 +1,22 @@
 public class Bus
 {
     private String linie;
-    private int hoehe;
-    private boolean ausziehbar;
+    private int sitzplaetze;
+    private boolean niederflur;
     
     public String getLinie()
     {
         return linie;
     }
     
-    public int getHoehe()
+    public int getSitzplaetze()
     {
-        return hoehe;
+        return sitzplaetze;
     }
     
-    public boolean getAusziehbar()
+    public boolean getNiederflur()
     {
-        return ausziehbar;
+        return niederflur;
     }
     
     public void setLinie(String neuLinie)
@@ -24,22 +24,23 @@ public class Bus
         linie = neuLinie;
     }
     
-    public void setHoehe(int neuHoehe)
+    public void setSitzplaetze(int neuSitzplaetze)
     {
-        hoehe = neuHoehe;
+        sitzplaetze = neuSitzplaetze;
     }
     
-        public void setAusziehbar(boolean neuAusziehbar)
+        public void setNiederflur(boolean neuNiederflur)
     {
-        ausziehbar = neuAusziehbar;
+        niederflur = neuNiederflur;
     }
     
     public Bus()
     {
         setLinie("UNKN");
-        setHoehe(0);
-        setAusziehbar(false);
+        setSitzplaetze(0);
+        setNiederflur(false);
     }
+    
     
     
 }
