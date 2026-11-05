@@ -52,20 +52,61 @@ public class Bus
     }
     
     
-    //set-Methoden
-    public void setLinie(String neuLinie)
+   //set-Methoden
+   public void setLinie(String neuLinie)
     {
         linie = neuLinie;
     }
     
-    public void setSitzplaetze(int neuSitzplaetze)
-    {
-        sitzplaetze = neuSitzplaetze;
-    }
     
-    public void setNiederflur(boolean neuNiederflur)
-    {
-        niederflur = neuNiederflur;
+   // set-methode
+   // add this methode
+   public void setlinie(String linie)
+   {
+       this.linie = linie;
+   }
+   
+   
+   /*parameterprüfung
+    * watt muss zwischen 1 und 2000 sein
+    */ 
+   public void setSitzplaetze(int sitzplaetze)
+   {
+       if((sitzplaetze >= 1) && (sitzplaetze < 2000))
+       {
+       this.sitzplaetze = sitzplaetze;
+       }
+       else
+       {
+           System.out.println("Fehler: sitzplaetze muss zwischen 1 und 2000 sein!");
+           this.sitzplaetze = 1;
+       }
+    }
+   
+    
+    
+   public void setNiederflur(boolean niederflur)
+   {
+       this.niederflur = niederflur;
+   }
+   
+   
+   
+   // print-methode 
+   // System.out.println("Lautsprecher "+hersteller+" - bluetooth: "+bluetooth+" - " + " - "+watt+" watt");
+   
+   // add ifPrint
+   public void printBus()
+   {
+     if (niederflur == true)
+     {
+        System.out.println("Bus "+linie+" - niederflur - " + " - "+sitzplaetze+" sitzplaetze");
+     }
+     else
+     {
+        System.out.println("Bus "+linie+" - kein niederflur - " + " - "+sitzplaetze+" sitzplaetze");
+     }
+   
     }
     
     
